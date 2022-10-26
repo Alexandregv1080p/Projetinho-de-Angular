@@ -5,3 +5,7 @@
 .nav-list a{
     color: white;
 }
+.img-logo{
+    position: relative;
+    margin: 40px;
+}
