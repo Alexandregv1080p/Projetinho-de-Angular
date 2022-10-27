@@ -2,18 +2,62 @@
     <mat-sidenav fixedInViewport="true" mode="side" class="sidenav" opened fixedTopGap="0">
         <img src="assets/imgs/unifenas-branco-small.png" class="img-logo"alt="">
         <mat-nav-list class="nav-list">
-            <a mat-list-item>
-                <i class="material-icons">
-                    trending_up
-                </i>
-                Avaliação
-            </a>
-            <a mat-list-item>
-                <i class="material-icons">
-                    notifications
-                </i>
-                Aviso
-            </a>
+            <div class="dropdown">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu()">
+                    <i class="material-icons">
+                        trending_up
+                    </i>
+                    Avaliação
+                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened" >
+                    <a>
+                        <i class="material-icons">
+                            border_color
+                        </i>
+                        Boletim
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            trending_up
+                        </i>
+                        Frequencia
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            insert_chart
+                        </i>
+                        Índice de rendimento
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu2()">
+                    <i class="material-icons">
+                        notifications
+                    </i>
+                    Aviso
+                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened2" >
+                    <a>
+                        <i class="material-icons">
+                            border_color
+                        </i>
+                        Boletim
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            trending_up
+                        </i>
+                        Frequencia
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            insert_chart
+                        </i>
+                        Índice de rendimento
+                    </a>
+                </div>
+            </div>
             <a mat-list-item>
                 <i class="material-icons">
                     account_box

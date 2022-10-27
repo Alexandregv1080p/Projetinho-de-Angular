@@ -9,7 +9,16 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
+  isMenuOpened:boolean = false;
+  isMenuOpened2:boolean = false;
+
   ngOnInit(): void {
+  }
+  toggleMenu():void {
+    this.isMenuOpened = !this.isMenuOpened
+  }
+  toggleMenu2():void {
+    this.isMenuOpened2 = !this.isMenuOpened2
   }
 
 }
