@@ -9,12 +9,15 @@ import {MatListModule} from '@angular/material/list';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HeaderComponent } from './components/template/header/header.component'
 import {MatToolbarModule } from '@angular/material/toolbar';
+import { HomeComponent } from './components/views/home/home.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import {MatToolbarModule } from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

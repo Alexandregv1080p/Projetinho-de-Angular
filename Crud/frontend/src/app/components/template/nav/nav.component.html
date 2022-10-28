@@ -1,6 +1,6 @@
 <mat-sidenav-container class="container">
     <mat-sidenav fixedInViewport="true" mode="side" class="sidenav" opened fixedTopGap="0">
-        <img src="assets/imgs/unifenas-branco-small.png" class="img-logo"alt="">
+        <img src="assets/imgs/unifenas-branco-small.png" class="img-logo"alt="" routerLink="">
         <mat-nav-list class="nav-list">
             <div class="dropdown">
                 <a mat-list-item class="dropmenu" (click)="toggleMenu()">
@@ -85,24 +85,96 @@
                     Documentos
                 </a>
             </div>
-            <a mat-list-item>
+            <a mat-list-item (click)="toggleMenu5()">
                 <i class="material-icons">
                     book
                 </i>
                 Disciplina
             </a>
-            <a mat-list-item>
+            <div class="dropdown-content" *ngIf="isMenuOpened5" >
+                <a>
+                    <i class="material-icons">
+                        event_note
+                    </i>
+                    Diario de classe
+                </a>
+                <a>
+                    <i class="material-icons">
+                        local_library
+                    </i>
+                    Diciplinas matriculadas
+                </a>
+                <a>
+                    <i class="material-icons">
+                        content_paste
+                    </i>
+                    Histórico
+                </a>
+                <a>
+                    <i class="material-icons">
+                        people
+                    </i>
+                    Minha turma
+                </a>
+                <a>
+                    <i class="material-icons">
+                        file_download
+                    </i>
+                    Publicações
+                </a>
+            </div>
+            <a mat-list-item (click)="toggleMenu6()">
                 <i class="material-icons">
                     attach_money
                 </i>
                 Financeiro
             </a>
-            <a mat-list-item>
+            <div class="dropdown-content" *ngIf="isMenuOpened6" >
+                <a>
+                    <i class="material-icons">
+                        account_balance_wallet
+                    </i>
+                    Ajustes de boletos
+                </a>
+                <a>
+                    <i class="material-icons">
+                        attach_money
+                    </i>
+                    Boletos
+                </a>
+                <a>
+                    <i class="material-icons">
+                        insert_drive_file
+                    </i>
+                    Extrato financeiro
+                </a>
+            </div>
+            <a mat-list-item (click)="toggleMenu7()">
                 <i class="material-icons">
                     my_library_books
                 </i>
                 Secretaria Virtual
             </a>
+            <div class="dropdown-content" *ngIf="isMenuOpened7" >
+                <a>
+                    <i class="material-icons">
+                        account_balance_wallet
+                    </i>
+                    Ajustes de boletos
+                </a>
+                <a>
+                    <i class="material-icons">
+                        attach_money
+                    </i>
+                    Boletos
+                </a>
+                <a>
+                    <i class="material-icons">
+                        insert_drive_file
+                    </i>
+                    Extrato financeiro
+                </a>
+            </div>
             <a mat-list-item>
                 <i class="material-icons">
                     vpn_key
@@ -117,4 +189,7 @@
             </a>
         </mat-nav-list>
     </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>

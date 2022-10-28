@@ -5,6 +5,9 @@
 .nav-list a{
     color: white;
 }
+.nav-list a:hover{
+    background-color: #503e3e;
+}
 .img-logo{
     position: relative;
     margin: 40px;
@@ -33,7 +36,7 @@
 }
   
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #503e3e
 }
 
 .dropdown:hover .dropdown-content {
@@ -42,3 +45,18 @@
 .material-icons, .icon-text {
     vertical-align: middle;
   }
+.dropdown-content a {
+    font-size: 0.7rem;
+    text-align: Left;
+    padding-left:40px;
+}
+.dropdown-content i {
+    padding-right:2px;
+}
+.nav-list i{
+    padding-right:15px;
+}
+.content{
+    padding: 16px;
+    background-color: white;
+}
