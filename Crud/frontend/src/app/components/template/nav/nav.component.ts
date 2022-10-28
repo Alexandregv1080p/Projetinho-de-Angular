@@ -11,6 +11,8 @@ export class NavComponent implements OnInit {
 
   isMenuOpened:boolean = false;
   isMenuOpened2:boolean = false;
+  isMenuOpened3:boolean = false;
+  isMenuOpened4:boolean = false;
 
   ngOnInit(): void {
   }
@@ -20,5 +22,10 @@ export class NavComponent implements OnInit {
   toggleMenu2():void {
     this.isMenuOpened2 = !this.isMenuOpened2
   }
-
+  toggleMenu3():void {
+    this.isMenuOpened3 = !this.isMenuOpened3
+  }
+  toggleMenu4():void {
+    this.isMenuOpened4 = !this.isMenuOpened4
+  }
 }

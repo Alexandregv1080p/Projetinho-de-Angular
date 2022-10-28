@@ -30,7 +30,6 @@
                     </a>
                 </div>
             </div>
-            <div class="dropdown">
                 <a mat-list-item class="dropmenu" (click)="toggleMenu2()">
                     <i class="material-icons">
                         notifications
@@ -40,36 +39,52 @@
                 <div class="dropdown-content" *ngIf="isMenuOpened2" >
                     <a>
                         <i class="material-icons">
-                            border_color
+                            notifications
                         </i>
-                        Boletim
-                    </a>
-                    <a>
-                        <i class="material-icons">
-                            trending_up
-                        </i>
-                        Frequencia
-                    </a>
-                    <a>
-                        <i class="material-icons">
-                            insert_chart
-                        </i>
-                        Índice de rendimento
+                        Avisos
                     </a>
                 </div>
-            </div>
-            <a mat-list-item>
+            
+            <a mat-list-item class="dropmenu" (click)="toggleMenu3()">
                 <i class="material-icons">
                     account_box
                 </i>
                 Cadastro
             </a>
-            <a mat-list-item>
+            <div class="dropdown-content" *ngIf="isMenuOpened3" >
+                <a>
+                    <i class="material-icons">
+                        chrome_reader_mode
+                    </i>
+                    Dados cadastrais
+                </a>
+                <a>
+                    <i class="material-icons">
+                        insert_drive_file
+                    </i>
+                    Documentos
+                </a>
+            </div>
+            <a mat-list-item class="dropmenu" (click)="toggleMenu4()">
                 <i class="material-icons">
                     today
                 </i>
                 Calendario
             </a>
+            <div class="dropdown-content" *ngIf="isMenuOpened4" >
+                <a>
+                    <i class="material-icons">
+                        today
+                    </i>
+                    Calendario
+                </a>
+                <a>
+                    <i class="material-icons">
+                        insert_drive_file
+                    </i>
+                    Documentos
+                </a>
+            </div>
             <a mat-list-item>
                 <i class="material-icons">
                     book
