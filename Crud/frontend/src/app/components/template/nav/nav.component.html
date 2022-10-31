@@ -3,8 +3,8 @@
         <img src="assets/imgs/unifenas-branco-small.png" class="img-logo"alt="" routerLink="">
         <mat-nav-list class="nav-list">
             <div class="dropdown">
-                <a mat-list-item class="dropmenu" (click)="toggleMenu()">
-                    <i class="material-icons">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu()" >
+                    <i class="material-icons" (click)="alteraArrow()">
                         trending_up
                     </i>
                     Avaliação
@@ -30,150 +30,163 @@
                     </a>
                 </div>
             </div>
-                <a mat-list-item class="dropmenu" (click)="toggleMenu2()">
-                    <i class="material-icons">
-                        notifications
-                    </i>
-                    Aviso
-                </a>
-                <div class="dropdown-content" *ngIf="isMenuOpened2" >
-                    <a>
+                <div class="dropdown">
+                    <a mat-list-item class="dropmenu" (click)="toggleMenu2()">
                         <i class="material-icons">
                             notifications
                         </i>
-                        Avisos
+                        Aviso
+                    </a>
+                    <div class="dropdown-content" *ngIf="isMenuOpened2" >
+                        <a>
+                            <i class="material-icons">
+                                notifications
+                            </i>
+                            Avisos
+                        </a>
+                    </div>
+                </div>
+            <div class="dropdown">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu3()">
+                    <i class="material-icons">
+                        account_box
+                    </i>
+                    Cadastro
+                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened3" >
+                    <a>
+                        <i class="material-icons">
+                            chrome_reader_mode
+                        </i>
+                        Dados cadastrais
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            insert_drive_file
+                        </i>
+                        Documentos
                     </a>
                 </div>
-            
-            <a mat-list-item class="dropmenu" (click)="toggleMenu3()">
-                <i class="material-icons">
-                    account_box
-                </i>
-                Cadastro
-            </a>
-            <div class="dropdown-content" *ngIf="isMenuOpened3" >
-                <a>
-                    <i class="material-icons">
-                        chrome_reader_mode
-                    </i>
-                    Dados cadastrais
-                </a>
-                <a>
-                    <i class="material-icons">
-                        insert_drive_file
-                    </i>
-                    Documentos
-                </a>
             </div>
-            <a mat-list-item class="dropmenu" (click)="toggleMenu4()">
-                <i class="material-icons">
-                    today
-                </i>
-                Calendario
-            </a>
-            <div class="dropdown-content" *ngIf="isMenuOpened4" >
-                <a>
+            <div class="dropdown">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu4()">
                     <i class="material-icons">
                         today
                     </i>
                     Calendario
                 </a>
-                <a>
-                    <i class="material-icons">
-                        insert_drive_file
-                    </i>
-                    Documentos
-                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened4" >
+                    <a>
+                        <i class="material-icons">
+                            today
+                        </i>
+                        Calendario
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            insert_drive_file
+                        </i>
+                        Documentos
+                    </a>
+                </div>
             </div>
-            <a mat-list-item (click)="toggleMenu5()">
-                <i class="material-icons">
-                    book
-                </i>
-                Disciplina
-            </a>
-            <div class="dropdown-content" *ngIf="isMenuOpened5" >
-                <a>
+            <div class="dropdown">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu5()">
                     <i class="material-icons">
-                        event_note
+                        book
                     </i>
-                    Diario de classe
+                    Disciplina
                 </a>
-                <a>
-                    <i class="material-icons">
-                        local_library
-                    </i>
-                    Diciplinas matriculadas
-                </a>
-                <a>
-                    <i class="material-icons">
-                        content_paste
-                    </i>
-                    Histórico
-                </a>
-                <a>
-                    <i class="material-icons">
-                        people
-                    </i>
-                    Minha turma
-                </a>
-                <a>
-                    <i class="material-icons">
-                        file_download
-                    </i>
-                    Publicações
-                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened5" >
+                    <a>
+                        <i class="material-icons">
+                            event_note
+                        </i>
+                        Diario de classe
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            local_library
+                        </i>
+                        Diciplinas matriculadas
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            content_paste
+                        </i>
+                        Histórico
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            people
+                        </i>
+                        Minha turma
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            file_download
+                        </i>
+                        Publicações
+                    </a>
+                </div>
             </div>
-            <a mat-list-item (click)="toggleMenu6()">
-                <i class="material-icons">
-                    attach_money
-                </i>
-                Financeiro
-            </a>
-            <div class="dropdown-content" *ngIf="isMenuOpened6" >
-                <a>
-                    <i class="material-icons">
-                        account_balance_wallet
-                    </i>
-                    Ajustes de boletos
-                </a>
-                <a>
+            <div class="dropdown">
+                <a mat-list-item  (click)="toggleMenu6()">
                     <i class="material-icons">
                         attach_money
                     </i>
-                    Boletos
+                    Financeiro
+                    <span class="left-icon"></span>
+                    <span class="rigth-icon"></span>
                 </a>
-                <a>
-                    <i class="material-icons">
-                        insert_drive_file
-                    </i>
-                    Extrato financeiro
-                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened6" >
+                    <a>
+                        <i class="material-icons">
+                            account_balance_wallet
+                        </i>
+                        Ajustes de boletos
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            attach_money
+                        </i>
+                        Boletos
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            insert_drive_file
+                        </i>
+                        Extrato financeiro
+                    </a>
+                </div>
             </div>
-            <a mat-list-item (click)="toggleMenu7()">
-                <i class="material-icons">
-                    my_library_books
-                </i>
-                Secretaria Virtual
-            </a>
-            <div class="dropdown-content" *ngIf="isMenuOpened7" >
-                <a>
+            <div class="dropdown">
+                <a mat-list-item  (click)="toggleMenu7()">
                     <i class="material-icons">
-                        account_balance_wallet
+                        my_library_books
                     </i>
-                    Ajustes de boletos
+                    Secretaria Virtual
                 </a>
-                <a>
-                    <i class="material-icons">
-                        attach_money
-                    </i>
-                    Boletos
-                </a>
-                <a>
-                    <i class="material-icons">
-                        insert_drive_file
-                    </i>
-                    Extrato financeiro
-                </a>
+                <div class="dropdown-content" *ngIf="isMenuOpened7" >
+                    <a>
+                        <i class="material-icons">
+                            account_balance_wallet
+                        </i>
+                        Ajustes de boletos
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            attach_money
+                        </i>
+                        Boletos
+                    </a>
+                    <a>
+                        <i class="material-icons">
+                            insert_drive_file
+                        </i>
+                        Extrato financeiro
+                    </a>
+                </div>
             </div>
             <a mat-list-item>
                 <i class="material-icons">

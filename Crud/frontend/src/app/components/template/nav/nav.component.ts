@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   constructor() { }
+  
+  dropdown : any = document.getElementsByClassName('.dropdown')
+
+  alteraArrow(){
+    this.dropdown.classList.toggle('active')
+  }
+
 
   isMenuOpened:boolean = false;
   isMenuOpened2:boolean = false;
@@ -40,4 +47,5 @@ export class NavComponent implements OnInit {
   toggleMenu7():void {
     this.isMenuOpened7 = !this.isMenuOpened7
   }
+ 
 }
