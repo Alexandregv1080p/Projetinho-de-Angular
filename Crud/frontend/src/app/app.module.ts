@@ -11,13 +11,17 @@ import { HeaderComponent } from './components/template/header/header.component'
 import {MatToolbarModule } from '@angular/material/toolbar';
 import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import { BoletimComponent } from './components/views/boletim/boletim.component';
+import { FormsModule } from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    BoletimComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

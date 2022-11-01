@@ -1,0 +1,38 @@
+.radio{
+    display:inline-flex;
+    overflow:hidden;
+    border-radius:15px;
+    margin:0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+.radio_input{
+    padding:8px 14px;
+    font-size:14px;
+    font-family:sans-serif;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(194, 189, 189);
+}
+.radio_label:not(:last-of-type){
+    border-right: 1px solid white;
+}
+.radio_input:checked{
+    background-color: black;
+    color:white
+}
+::ng-deep .mat-radio-container .mat-radio-outer-circle,
+::ng-deep .mat-radio-container .mat-radio-inner-circle {
+  border: none;
+  width: 0;
+}
+::ng-deep .mat-radio-button .mat-radio-container {
+    width: 0;
+  }
+::ng-deep .mat-radio-button:hover{
+    background-color: rgb(7, 5, 5);
+    color: rgb(255, 255, 255);
+}
+:host ::ng-deep .mat-radio-checked{
+    background-color: white;
+    color: black;
+}
