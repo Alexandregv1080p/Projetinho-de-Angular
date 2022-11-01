@@ -13,7 +13,9 @@ import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { BoletimComponent } from './components/views/boletim/boletim.component';
 import { FormsModule } from '@angular/forms';
-import {MatRadioModule} from '@angular/material/radio'
+import {MatRadioModule} from '@angular/material/radio';
+import { FrequenciaComponent } from './components/views/frequencia/frequencia.component';
+import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {MatRadioModule} from '@angular/material/radio'
     NavComponent,
     HeaderComponent,
     HomeComponent,
-    BoletimComponent
+    BoletimComponent,
+    FrequenciaComponent,
+    NotasFaltasComponent
   ],
   imports: [
     BrowserModule,

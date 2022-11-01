@@ -1,6 +1,6 @@
 <p>boletim works!</p>
 <mat-radio-group class="radio">
-    <mat-radio-button class="radio_input" type="radio" value="option1" name="radio1" id="opt1">
+    <mat-radio-button checked class="radio_input" routerLink="boletim/notas-e-faltas" type="radio" value="option1" name="radio1" id="opt1">
         Notas e Faltas
     </mat-radio-button>
     
@@ -9,5 +9,5 @@
     </mat-radio-button>
 </mat-radio-group>
 <mat-sidenav-content class="content">
-    <router-outlet></router-outlet>
+    <router-outlet name="boletins"></router-outlet>
 </mat-sidenav-content>
