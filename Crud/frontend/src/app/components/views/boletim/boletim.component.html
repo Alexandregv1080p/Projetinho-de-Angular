@@ -1,13 +1,12 @@
-<p>boletim works!</p>
 <mat-radio-group class="radio">
-    <mat-radio-button checked class="radio_input" routerLink="boletim/notas-e-faltas" type="radio" value="option1" name="radio1" id="opt1">
-        Notas e Faltas
-    </mat-radio-button>
+        <mat-radio-button class="radio_input" checked [routerLink]="['notas-faltas']" type="radio" value="option1" name="radio1" id="opt1">
+            Notas e Faltas
+        </mat-radio-button>
     
-    <mat-radio-button class="radio_input" type="radio" value="option2" name="radio2" id="opt2">
-        Últimas notas
-    </mat-radio-button>
-</mat-radio-group>
-<mat-sidenav-content class="content">
-    <router-outlet name="boletins"></router-outlet>
+        <mat-radio-button class="radio_input" [routerLink]="['ultimas-notas']" type="radio" value="option2" name="radio2" id="opt2">
+            Últimas notas
+        </mat-radio-button>
+    </mat-radio-group>
+    <mat-sidenav-content class="content" style="margin-left:0">
+        <router-outlet></router-outlet>
 </mat-sidenav-content>

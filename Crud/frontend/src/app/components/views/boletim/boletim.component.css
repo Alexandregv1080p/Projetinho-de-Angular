@@ -1,9 +1,14 @@
+* {
+    font-family: 'Open Sans',sans-serif;
+}
 .radio{
     display:inline-flex;
     overflow:hidden;
     border-radius:15px;
     margin: 0 40%;
+    margin-bottom: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    background-color: #b9f1ff;  
 }
 .radio_input{
     padding:8px 14px;
@@ -35,4 +40,8 @@
 :host ::ng-deep .mat-radio-checked{
     background-color: white;
     color: black;
+}
+.content{
+    padding: 20px;
+    background-color: #ffffff; 
 }

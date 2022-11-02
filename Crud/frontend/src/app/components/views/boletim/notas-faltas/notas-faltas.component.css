@@ -1,0 +1,14 @@
+.materias{
+    margin-top: 15px;
+    padding: 25px;
+}
+.materias:hover{
+    box-shadow: 5px 5px 15px 5px rgba(73, 15, 15, 0.1);
+    cursor: pointer;
+}
+.title{
+    font-size: 1rem;
+}
+.subtitle{
+    font-size: 0.8rem;
+}

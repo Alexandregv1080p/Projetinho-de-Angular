@@ -15,7 +15,8 @@ import { BoletimComponent } from './components/views/boletim/boletim.component';
 import { FormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import { FrequenciaComponent } from './components/views/frequencia/frequencia.component';
-import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component'
+import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component';
+import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/no
     HomeComponent,
     BoletimComponent,
     FrequenciaComponent,
-    NotasFaltasComponent
+    NotasFaltasComponent,
+    UltimasNotasComponent
   ],
   imports: [
     BrowserModule,

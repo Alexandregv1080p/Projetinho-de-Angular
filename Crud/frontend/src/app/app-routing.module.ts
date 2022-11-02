@@ -1,3 +1,4 @@
+import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component';
 import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component';
 import { FrequenciaComponent } from './components/views/frequencia/frequencia.component';
 import { HomeComponent } from './components/views/home/home.component';
@@ -12,16 +13,21 @@ const routes: Routes = [
   },
   {
     path:"boletim",
-    component:BoletimComponent
+    component:BoletimComponent,
+    children:[
+      {
+        path:"notas-faltas",
+        component:NotasFaltasComponent
+      },
+      {
+        path:"ultimas-notas",
+        component:UltimasNotasComponent
+      }
+    ]
   },
   {
     path:"frequencia",
     component:FrequenciaComponent
-  },
-  {
-    path:"boletim/notas-e-faltas",
-    component:NotasFaltasComponent,
-    outlet: "boletins"
   }
 ];
 
