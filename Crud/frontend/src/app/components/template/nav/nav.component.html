@@ -8,7 +8,10 @@
                         trending_up
                     </i>
                     Avaliação
+                    <i class="material-icons arrow">expand_more</i>
                 </a>
+                
+                <span class="fas fa-caret-down"></span>
                 <div class="dropdown-content" *ngIf="isMenuOpened" >
                     <a routerLink="boletim">
                         <i class="material-icons">
@@ -22,7 +25,7 @@
                         </i>
                         Frequencia
                     </a>
-                    <a>
+                    <a routerLink="rendimento">
                         <i class="material-icons">
                             insert_chart
                         </i>
@@ -36,7 +39,9 @@
                             notifications
                         </i>
                         Aviso
+                        <i class="material-icons arrow">expand_more</i>
                     </a>
+                    
                     <div class="dropdown-content" *ngIf="isMenuOpened2" >
                         <a>
                             <i class="material-icons">
@@ -52,6 +57,7 @@
                         account_box
                     </i>
                     Cadastro
+                    <i class="material-icons arrow">expand_more</i>
                 </a>
                 <div class="dropdown-content" *ngIf="isMenuOpened3" >
                     <a>
@@ -74,6 +80,7 @@
                         today
                     </i>
                     Calendario
+                    <i class="material-icons arrow">expand_more</i>
                 </a>
                 <div class="dropdown-content" *ngIf="isMenuOpened4" >
                     <a>
@@ -96,6 +103,7 @@
                         book
                     </i>
                     Disciplina
+                    <i class="material-icons arrow">expand_more</i>
                 </a>
                 <div class="dropdown-content" *ngIf="isMenuOpened5" >
                     <a>
@@ -131,13 +139,12 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a mat-list-item  (click)="toggleMenu6()">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu6()">
                     <i class="material-icons">
                         attach_money
                     </i>
                     Financeiro
-                    <span class="left-icon"></span>
-                    <span class="rigth-icon"></span>
+                    <i class="material-icons arrow">expand_more</i>
                 </a>
                 <div class="dropdown-content" *ngIf="isMenuOpened6" >
                     <a>
@@ -161,11 +168,12 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a mat-list-item  (click)="toggleMenu7()">
+                <a mat-list-item class="dropmenu" (click)="toggleMenu7()">
                     <i class="material-icons">
                         my_library_books
                     </i>
                     Secretaria Virtual
+                    <i class="material-icons arrow">expand_more</i>
                 </a>
                 <div class="dropdown-content" *ngIf="isMenuOpened7" >
                     <a>
@@ -188,7 +196,7 @@
                     </a>
                 </div>
             </div>
-            <a mat-list-item>
+            <a mat-list-item class="senha">
                 <i class="material-icons">
                     vpn_key
                 </i>

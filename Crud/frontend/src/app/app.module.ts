@@ -16,7 +16,13 @@ import { FormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import { FrequenciaComponent } from './components/views/frequencia/frequencia.component';
 import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component';
-import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component'
+import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component';
+import { RendimentoComponent } from './components/views/rendimento/rendimento.component';
+import { TabelaComponent } from './components/tabela/tabela.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { DocumentosComponent } from './components/views/documentos/documentos.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +33,10 @@ import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/
     BoletimComponent,
     FrequenciaComponent,
     NotasFaltasComponent,
-    UltimasNotasComponent
+    UltimasNotasComponent,
+    RendimentoComponent,
+    TabelaComponent,
+    DocumentosComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +47,10 @@ import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/
     MatToolbarModule,
     MatCardModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { RendimentoComponent } from './components/views/rendimento/rendimento.component';
 import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component';
 import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component';
 import { FrequenciaComponent } from './components/views/frequencia/frequencia.component';
@@ -28,6 +29,9 @@ const routes: Routes = [
   {
     path:"frequencia",
     component:FrequenciaComponent
+  },{
+    path:"rendimento",
+    component:RendimentoComponent
   }
 ];
 

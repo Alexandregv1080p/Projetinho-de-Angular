@@ -21,10 +21,6 @@
     border: none;
     cursor: pointer;
   }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-}
 .dropdown-content {
     background-color: #022c58;
     min-width: 239px;
@@ -38,7 +34,7 @@
     display: block;
     cursor: pointer;
 }
-  
+
 .dropdown-content a:hover {
     background-color: #503e3e
 }
@@ -46,6 +42,7 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .material-icons, .icon-text {
     vertical-align: middle;
   }
@@ -64,30 +61,7 @@
     padding: 20px;
     background-color: white; 
 }
-.dropdown::before{
-    content:'';
-    position: absolute;
-    top:25px;
-    left:212px;
-    width:10px;
-    height: 2px;
-    background: white;
-    z-index: 10;
-    transform: rotate(40deg);
-    transition: 0.5s;
-}
-.dropdown::after{
-    content:'';
-    position: absolute;
-    top:25px;
-    left:219px;
-    width:10px;
-    height: 2px;
-    background: white;
-    z-index: 10;
-    transform: rotate(-40deg);
-    transition: 0.5s;
-}
+
 .mat-list-base .mat-list-item .mat-list-item-content{
     display: flex;
     flex-direction: row;
@@ -97,4 +71,17 @@
     position: relative;
     margin-left: -108px;
     height: inherit;
+}
+/*:host ::ng-deep .nav-list[_ngcontent-jix-c107] .dropmenu[_ngcontent-jix-c107]:hover {
+    background-color: #503e3e;
+    width: 165%;
+}*/
+.senha:hover{
+    background-color: #503e3e;
+}
+.arrow{
+    font-size: 19px;
+    position: absolute;
+    top: 15px;
+    left: 203px;
 }
