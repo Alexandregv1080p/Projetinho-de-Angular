@@ -1,3 +1,4 @@
+import { DocumentosComponent } from './components/views/documentos/documentos.component';
 import { RendimentoComponent } from './components/views/rendimento/rendimento.component';
 import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component';
 import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component';
@@ -32,6 +33,9 @@ const routes: Routes = [
   },{
     path:"rendimento",
     component:RendimentoComponent
+  },{
+    path:"documentos",
+    component:DocumentosComponent
   }
 ];
 

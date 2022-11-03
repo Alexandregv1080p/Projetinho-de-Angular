@@ -1,3 +1,4 @@
+import { TabelaDataSource } from './../../tabela/tabela-datasource';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,6 @@ export class DocumentosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  displayedColumns = ['documento', 'obg',"bmatricula","aceito","motivo","data","envio","download",];
 
 }
