@@ -7,6 +7,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BoletimComponent } from './components/views/boletim/boletim.component';
+import { DiarioDeClasseComponent } from './components/views/diciplina/diario-de-classe/diario-de-classe.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   },{
     path:"documentos",
     component:DocumentosComponent
+  },
+  {
+    path:"diciplina/diario-de-classe",
+    component:DiarioDeClasseComponent
   }
 ];
 

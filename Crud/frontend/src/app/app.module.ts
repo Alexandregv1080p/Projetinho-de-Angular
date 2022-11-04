@@ -22,7 +22,9 @@ import { TabelaComponent } from './components/tabela/tabela.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { DocumentosComponent } from './components/views/documentos/documentos.component'
+import { DocumentosComponent } from './components/views/documentos/documentos.component';
+import { DiarioDeClasseComponent } from './components/views/diciplina/diario-de-classe/diario-de-classe.component'
+import {MatCheckboxModule} from '@angular/material/checkbox'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { DocumentosComponent } from './components/views/documentos/documentos.co
     UltimasNotasComponent,
     RendimentoComponent,
     TabelaComponent,
-    DocumentosComponent
+    DocumentosComponent,
+    DiarioDeClasseComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { DocumentosComponent } from './components/views/documentos/documentos.co
     MatRadioModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
