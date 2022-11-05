@@ -1,8 +1,8 @@
-import { DocumentosComponent } from './components/views/documentos/documentos.component';
-import { RendimentoComponent } from './components/views/rendimento/rendimento.component';
+import { DocumentosComponent } from './components/views/Cadastros/documentos/documentos.component';
+import { RendimentoComponent } from './components/views/Avaliação/rendimento/rendimento.component';
+import { FrequenciaComponent } from './components/views/Avaliação/frequencia/frequencia.component';
 import { UltimasNotasComponent } from './components/views/boletim/ultimas-notas/ultimas-notas.component';
 import { NotasFaltasComponent } from './components/views/boletim/notas-faltas/notas-faltas.component';
-import { FrequenciaComponent } from './components/views/frequencia/frequencia.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';

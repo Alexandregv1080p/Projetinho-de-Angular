@@ -1,4 +1,4 @@
-import { TabelaDataSource, TabelaItem } from './../../tabela/tabela-datasource';
+import { TabelaDataSource, TabelaItem } from './../../../tabela/tabela-datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
 
