@@ -38,8 +38,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox'
     UltimasNotasComponent,
     RendimentoComponent,
     TabelaComponent,
-    DocumentosComponent,
-    DiarioDeClasseComponent
+    DiarioDeClasseComponent,
+    DocumentosComponent
   ],
   imports: [
     BrowserModule,
