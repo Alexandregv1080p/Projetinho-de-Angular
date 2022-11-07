@@ -5,21 +5,22 @@ import {MatTableDataSource} from '@angular/material/table';
 export interface PeriodicElement {
   name: string;
   position: string;
-  weight: number;
+  weight: string;
   symbol: string;
+  situation:string
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: "RG", name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: "2 Fotos 3X4", name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: "Fotocópia do Histórico", name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {position: "RG", name: '', weight:"25-10-2022", symbol: 'H',situation:""},
+  {position: "2 Fotos 3X4", name: '', weight: "25-10-2022", symbol: 'He',situation:""},
+  {position: "Fotocópia do Histórico", name: '', weight:"25-10-2022", symbol: 'Li',situation:""},
+  {position: "Fotocópia Conclusão Ensino Médio", name: '', weight: "25-10-2022", symbol: 'Be',situation:""},
+  {position: "Documento de Identidade", name: '', weight: "31-10-2022", symbol: 'B',situation:""},
+  {position: "CPF", name: '', weight: "30-10-2022", symbol: 'C',situation:""},
+  {position: "Títutlo de Eleitor", name: '', weight: "30-10-2022", symbol: 'N',situation:""},
+  {position: "Comprovante de votação", name: '', weight: "30-10-2022", symbol: 'O',situation:""},
+  {position: "Certificado Militar", name: '', weight: "31-10-2022", symbol: 'F',situation:''},
+  {position: "Certidão de Nascimento", name: '', weight: "30-10-2022", symbol: 'Ne',situation:""},
 ];
 @Component({
   selector: 'app-documentos',
@@ -27,32 +28,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['/documentos.component.css']
 })
 export class DocumentosComponent {
-  displayedColumns: string[] = [ 'position','select','name', 'weight', 'symbol'];
+  displayedColumns: string[] = [ 'position','select','select2','name', 'weight', 'symbol','situation'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
-  /** Whether the number of selected elements matches the total number of rows. */
-  isAllSelected() {
-    const numSelected = this.selection.selected.length;
-    const numRows = this.dataSource.data.length;
-    return numSelected === numRows;
-  }
-
-  /** Selects all rows if they are not all selected; otherwise clear selection. */
-  toggleAllRows() {
-    if (this.isAllSelected()) {
-      this.selection.clear();
-      return;
-    }
-
-    this.selection.select(...this.dataSource.data);
-  }
-
-  /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: PeriodicElement): string {
-    if (!row) {
-      return `${this.isAllSelected() ? 'deselect' : 'select'} all`;
-    }
-    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
-  }
+  
 }
