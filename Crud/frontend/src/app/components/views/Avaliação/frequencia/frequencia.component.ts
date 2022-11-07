@@ -24,5 +24,6 @@ export class FrequenciaComponent implements OnInit {
   ngOnInit(): void {
   }
  
+  
 
 }
