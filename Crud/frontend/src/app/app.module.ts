@@ -1,9 +1,8 @@
 import { DocumentosComponent } from './components/views/Cadastros/documentos/documentos.component';
 import { FrequenciaComponent } from './components/views/Avaliação/frequencia/frequencia.component';
 import { RendimentoComponent } from './components/views/Avaliação/rendimento/rendimento.component';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,6 +24,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DiarioDeClasseComponent } from './components/views/diciplina/diario-de-classe/diario-de-classe.component'
 import {MatCheckboxModule} from '@angular/material/checkbox'
+import { NgxChartsModule }from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -54,7 +54,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox'
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
