@@ -1,5 +1,15 @@
 <h1>Índice de rendimento</h1>
 <hr>
-<mat-card class="materias ">
-    <mat-card-subtitle class="subtitle">Nenhum resultado encontrado</mat-card-subtitle>
-</mat-card>
+<ngx-charts-bar-vertical 
+    [view]="[1000,400]"
+    [results]="saleData"
+    [xAxisLabel]="'Média do aluno'"
+    [legendTitle]="'Product Sale Chart'"
+    [yAxisLabel]="'Rendimento do Aluno'"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [gradient]="true">
+</ngx-charts-bar-vertical>

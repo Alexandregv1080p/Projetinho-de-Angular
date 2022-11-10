@@ -11,5 +11,11 @@ export class RendimentoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  saleData = [
+    { name: "Arquitetura de Computadores", value: 5 },
+    { name: "Desenvolvimento Web", value: 7 },
+    { name: "Cálculo 1", value: 6 },
+    { name: "Atividade de Extensão", value: 10 },
+    { name: "Fridge", value: 4 }
+  ];
 }
