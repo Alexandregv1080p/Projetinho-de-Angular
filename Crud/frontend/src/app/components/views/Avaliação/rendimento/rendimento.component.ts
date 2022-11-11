@@ -16,6 +16,6 @@ export class RendimentoComponent implements OnInit {
     { name: "Desenvolvimento Web", value: 7 },
     { name: "Cálculo 1", value: 6 },
     { name: "Atividade de Extensão", value: 10 },
-    { name: "Fridge", value: 4 }
+    { name: "Dados e conhecimento", value: 4 }
   ];
 }
